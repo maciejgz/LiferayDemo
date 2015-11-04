@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="pl.mg.liferay.service.EntryLocalService" class="pl.mg.liferay.service.impl.EntryLocalServiceImpl" />
+	<bean id="pl.mg.liferay.service.EntryService" class="pl.mg.liferay.service.impl.EntryServiceImpl" />
+	<bean id="pl.mg.liferay.service.persistence.EntryPersistence" class="pl.mg.liferay.service.persistence.EntryPersistenceImpl" parent="basePersistence" />
+	<bean id="pl.mg.liferay.service.GuestbookLocalService" class="pl.mg.liferay.service.impl.GuestbookLocalServiceImpl" />
+	<bean id="pl.mg.liferay.service.GuestbookService" class="pl.mg.liferay.service.impl.GuestbookServiceImpl" />
+	<bean id="pl.mg.liferay.service.persistence.GuestbookPersistence" class="pl.mg.liferay.service.persistence.GuestbookPersistenceImpl" parent="basePersistence" />
+</beans>
