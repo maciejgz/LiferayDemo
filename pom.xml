@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>pl.mg.liferay</groupId>
-	<artifactId>LiferayDemo</artifactId>
+	<artifactId>LiferayDemo-portlet</artifactId>
 	<packaging>war</packaging>
 	<name>LiferayDemo Portlet</name>
 	<version>1.0.0-SNAPSHOT</version>
@@ -51,6 +51,7 @@
 					<appServerPortalDir>${liferay.app.server.portal.dir}</appServerPortalDir>
 					<liferayVersion>${liferay.version}</liferayVersion>
 					<pluginType>portlet</pluginType>
+					<plugin.name>LiferayDemo-portlet</plugin.name>
 				</configuration>
 			</plugin>
 			<plugin>
