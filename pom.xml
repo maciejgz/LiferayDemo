@@ -11,7 +11,7 @@
 
 	<description>
 		Demo project for Liferay. Simple tutorials portlets integrated with localhost Liferay server.
-	
+		Guestbook created by Liferay Service Builder which is not required but useful in simple and standard projects.
 	</description>
 
 	<profiles>
