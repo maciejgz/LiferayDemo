@@ -1,8 +1,13 @@
+<%@page import="pl.mg.liferay.model.Entry"%>
 <%@include file="/html/init.jsp"%>
 
 <%
     long guestbookId = Long.valueOf((Long) renderRequest
             .getAttribute("guestbookId"));
+%>
+
+<%!
+   com.liferay.portal.kernel.dao.search.SearchContainer<Entry> searchContainer = null;
 %>
 
 <aui:nav cssClass="nav-tabs">
