@@ -74,7 +74,14 @@ public class GuestbookLocalServiceImpl extends GuestbookLocalServiceBaseImpl {
 		guestbook.setExpandoBridgeAttributes(serviceContext);
 
 		guestbookPersistence.update(guestbook);
-		
+
+		/*
+		 * Dodanie zasobu do bazy danych. Trzy ostatnie parametry to ustawienia
+		 * dostępu. Tutaj tak naprawdę dołączane uprawnienia
+		 */
+		resourceLocalService.addResources(user.getCompanyId(), groupId, userId,
+				Guestbook.class.getName(), guestbookId, false, true, true);
+
 		return guestbook;
 	}
 

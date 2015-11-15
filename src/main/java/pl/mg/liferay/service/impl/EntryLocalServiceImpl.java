@@ -97,6 +97,10 @@ public class EntryLocalServiceImpl extends EntryLocalServiceBaseImpl {
 		entry.setMessage(message);
 		entryPersistence.update(entry);
 
+		//dodanie elementu (zasobu) do bazy i włączenie dla niego uprawnien w ostatnich dwóch paramentrach
+		resourceLocalService.addResources(user.getCompanyId(), groupId, userId,
+				Entry.class.getName(), entryId, false, true, true);
+		
 		return entry;
 	}
 
