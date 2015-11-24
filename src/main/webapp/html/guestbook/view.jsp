@@ -1,6 +1,8 @@
 <%@page import="pl.mg.liferay.model.Entry"%>
 <%@include file="/html/init.jsp"%>
 
+<portlet:defineObjects/>
+
 <%
 	long guestbookId = Long.valueOf((Long) renderRequest
 			.getAttribute("guestbookId"));
