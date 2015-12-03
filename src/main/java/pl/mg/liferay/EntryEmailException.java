@@ -21,6 +21,12 @@ import com.liferay.portal.kernel.exception.PortalException;
  */
 public class EntryEmailException extends PortalException {
 
+	
+	
+	
+	//zmiana 1
+	
+	
 	public EntryEmailException() {
 		super();
 	}
