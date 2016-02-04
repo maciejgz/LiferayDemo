@@ -19,7 +19,7 @@
 			<guest-defaults>
 				<action-key>VIEW</action-key>
 			</guest-defaults>
-			<guest-unsupported></guest-unsupported>
+			<guest-unsupported />
 		</permissions>
 	</portlet-resource>
 
@@ -38,7 +38,7 @@
 			<site-member-defaults>
 				<action-key>ADD_ENTRY</action-key>
 			</site-member-defaults>
-			<guest-defaults></guest-defaults>
+			<guest-defaults />
 			<guest-unsupported>
 				<action-key>ADD_GUESTBOOK</action-key>
 				<action-key>ADD_ENTRY</action-key>

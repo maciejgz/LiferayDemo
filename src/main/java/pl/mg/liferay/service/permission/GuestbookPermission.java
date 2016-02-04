@@ -23,7 +23,9 @@ public class GuestbookPermission {
 			SystemException {
 		Guestbook guestbook = GuestbookLocalServiceUtil
 				.getGuestbook(guestbookId);
-
+				
+		System.out.println("actionId=" + actionId);
+		
 		return permissionChecker
 				.hasPermission(guestbook.getGroupId(),
 						Guestbook.class.getName(), guestbook.getGuestbookId(),
